@@ -18,124 +18,480 @@
     />
   </head>
   <body>
+    <!-- Page wrapper -->
     <div class="container-fluid">
       <div class="row flex-nowrap">
         <!-- Sidebar -->
-        <aside class="col-auto px-0">
-          <div id="sidebar" class="collapse collapse-horizontal show px-5">
-            <div class="sidebar-brand py-4">
-              <img src="assets/Logo.png" alt="Logo" />
+        <div class="col-auto px-0">
+          <ul
+            id="sidebar"
+            class="navbar-nav sidebar collapse collapse-horizontal show px-2"
+          >
+            <!-- Sidebar - Brand -->
+            <a
+              href="#"
+              class="sidebar-brand d-flex align-items-center justify-content-center"
+            >
+              <div class="sidebar-brand py-4">
+                <img src="assets/Logo.png" alt="Logo" />
+              </div>
+            </a>
+
+            <!-- Nav Items -->
+            <div class="border-bottom px-2">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-fw fa-tachometer-alt text-muted me-2"></i>
+                  <span class="text-secondary">Dashboard</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-border-all text-muted me-2"></i>
+                  <span class="text-secondary">Products</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-heart text-muted me-2"></i>
+                  <span class="text-secondary">Favorites</span>
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-mail-bulk text-muted me-2"></i>
+                  <span class="text-secondary">Inbox</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-list text-muted me-2"></i>
+                  <span class="text-secondary">Order List</span>
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-cubes text-muted me-2"></i>
+                  <span class="text-secondary">Product Stock</span>
+                </a>
+              </li>
             </div>
-            <ul id="sidebar-nav" class="navbar-nav min-vh-100">
+            <div class="border-bottom px-2">
+              <!-- Heading -->
+              <div class="sidebar-heading">Pages</div>
               <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  <span class="me-2">&#x1F4CA;</span>
-                  Dashboard
+                <a href="#" class="nav-link">
+                  <i class="fas fa-gift text-muted me-2"></i>
+                  <span class="text-secondary">Pricing</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span class="me-2">&#x1F4D1;</span>
-                  Products
+                <a href="#" class="nav-link">
+                  <i class="far fa-calendar-alt text-muted me-2"></i>
+                  <span class="text-secondary">Calendar</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span class="me-2">&#x2764;</span>
-                  Favorites
+                <a href="#" class="nav-link">
+                  <i class="fas fa-clipboard-list text-muted me-2"></i>
+                  <span class="text-secondary">Todo</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span class="me-2">&#x1F4E4;</span>
-                  Inbox
+                <a href="#" class="nav-link">
+                  <i class="fas fa-user-friends text-muted me-2"></i>
+                  <span class="text-secondary">Contact</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span class="me-2">&#x1F4DD;</span>
-                  Order Lists
+                <a href="#" class="nav-link">
+                  <i class="fas fa-file-invoice-dollar text-muted me-2"></i>
+                  <span class="text-secondary">Invoice</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span class="me-2">&#x1F4C8;</span>
-                  Product Stock
+                <a href="#" class="nav-link">
+                  <i class="fas fa-layer-group text-muted me-2"></i>
+                  <span class="text-secondary">UI Elements</span>
                 </a>
               </li>
-            </ul>
-          </div>
-        </aside>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-user-alt text-muted me-2"></i>
+                  <span class="text-secondary">Team</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-table text-muted me-2"></i>
+                  <span class="text-secondary">Tables</span>
+                </a>
+              </li>
+            </div>
+            <div class="px-2">
+              <li class="nav-item">
+                <a href="#" class="nav-link"
+                  ><i class="fas fa-cog text-muted me-2"></i>
+                  <span class="text-secondary">Settings</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"
+                  ><i class="fas fa-sign-out-alt text-muted me-2"></i>
+                  <span class="text-secondary">Logout</span>
+                </a>
+              </li>
+            </div>
+          </ul>
+          <!-- End of Sidebar -->
+        </div>
         <!-- Main Content -->
-        <main class="col">
-          <header class="d-flex justify-content-between align-items-center py-2 mb-3">
-            <div class="d-flex align-items-center">
-              <button
-                type="button"
-                class="navbar-toggler me-3"
-                data-bs-target="#sidebar"
-                data-bs-toggle="collapse"
+        <div class="col px-0">
+          <div class="container-fluid pt-3 mb-3">
+            <div class="row align-items-center">
+              <!-- Left Section -->
+              <div class="col-md-4 d-flex align-items-center">
+                <button
+                  type="button"
+                  class="navbar-toggler me-3"
+                  data-bs-target="#sidebar"
+                  data-bs-toggle="collapse"
+                >
+                  <i class="fas fa-bars fs-4 text-secondary"></i>
+                </button>
+                <form class="w-100">
+                  <div class="input-group bg-light rounded-4">
+                    <div class="input-group-append">
+                      <button class="btn" type="button">
+                        <i class="fas fa-search fa-sm text-muted"></i>
+                      </button>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control bg-light border-0 rounded-4"
+                      placeholder="Search"
+                      aria-label="Search"
+                      aria-describedby="basic-addon2"
+                    />
+                  </div>
+                </form>
+              </div>
+
+              <!-- Right Section -->
+              <div
+                class="col-md-8 d-flex justify-content-end align-items-center gap-3 mt-5 mt-md-0"
               >
-                &#9776;
-              </button>
-              <div class="input-group mb-3">
-                <input
-                  type="text"
-                  class="form-control rounded-pill"
-                  placeholder="Search mail"
-                  aria-label="Search mail"
-                />
+                <div class="text-center">
+                  <button class="btn position-relative">
+                    <img src="assets/bell-icon.png" alt="Notifications" />
+                    <span
+                      class="position-absolute top-0 start-60 translate-middle badge rounded-circle bg-danger"
+                    >
+                      6
+                    </span>
+                  </button>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="d-flex align-items-end gap-2">
+                    <img
+                      src="assets/flag.png"
+                      class="border rounded small-img img-fluid"
+                      alt="Flag"
+                    />
+                    <p class="mb-0 text-muted font-small d-none d-md-block">
+                      English
+                    </p>
+                  </div>
+
+                  <div class="dropdown">
+                    <i
+                      class="fas fa-angle-down text-secondary p-1 font-small"
+                      data-bs-toggle="dropdown"
+                      aria-hidden="true"
+                    ></i>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="#">Country 1</a></li>
+                      <li><a class="dropdown-item" href="#">Country 2</a></li>
+                      <li><a class="dropdown-item" href="#">Country 3</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-3 me-4 me-md-0">
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      src="assets/admin-img.png"
+                      class="border bg-secondary rounded-circle img-fluid small-img"
+                      alt="Profile"
+                    />
+                    <div class="mt-2 d-none d-md-block">
+                      <p class="mb-0 text-dark fw-medium font-small">
+                        Moni Roy
+                      </p>
+                      <p class="mb-0 text-muted font-small">Admin</p>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <i
+                      class="fas fa-angle-down border text-secondary rounded-circle p-1 font-small"
+                      data-bs-toggle="dropdown"
+                      aria-hidden="true"
+                    ></i>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Settings</a></li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="d-flex align-items-center">
-              <button class="btn btn-light me-3 position-relative">
-                <span class="me-2">&#x1F514;</span>
-                <span
-                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                >
-                  6
-                </span>
-              </button>
-              <div class="dropdown">
-                <button
-                  class="btn btn-white dropdown-toggle d-flex align-items-center"
-                  data-bs-toggle="dropdown"
-                >
-                  <img
-                    src="assets/flag.png"
-                    class="rounded-circle me-2"
-                    alt="flag"
-                  />
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li><a class="dropdown-item" href="#">Country 1</a></li>
-                  <li><a class="dropdown-item" href="#">Country 2</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Country 3</a></li>
-                </ul>
+          </div>
+          <div class="bg-light p-4 h-100">
+            <h1 class="mb-4">Inbox</h1>
+            <div class="row">
+              <div class="col-12 col-lg-4 mb-3">
+                <div class="bg-white p-4 border rounded-3">
+                  <!-- Compose Button -->
+                  <button class="btn btn-primary w-100 mb-3">+ Compose</button>
+
+                  <!-- My Email Section -->
+                  <p class="fw-bold mb-3">My Email</p>
+                  <ul class="list-unstyled px-2">
+                    <li
+                      class="d-flex justify-content-between align-items-center py-2 rounded-3 px-3 bg-navy mb-2"
+                    >
+                      <span
+                        ><i class="fas fa-mail-bulk me-2 text-primary"></i>
+                        Inbox</span
+                      >
+                      <span class="badge bg-primary rounded-pill">1253</span>
+                    </li>
+                    <li
+                      class="d-flex justify-content-between align-items-center px-3 mb-2"
+                    >
+                      <span
+                        ><i class="fas fa-star me-2 text-warning"></i>
+                        Starred</span
+                      >
+                      <span class="text-muted">245</span>
+                    </li>
+                    <li
+                      class="d-flex justify-content-between align-items-center px-3 mb-2"
+                    >
+                      <span
+                        ><i class="fas fa-paper-plane me-2 text-success"></i>
+                        Sent</span
+                      >
+                      <span class="text-muted">24,532</span>
+                    </li>
+                    <li
+                      class="d-flex justify-content-between align-items-center px-3 mb-2"
+                    >
+                      <span
+                        ><i class="fas fa-pencil-alt me-2 text-secondary"></i>
+                        Draft</span
+                      >
+                      <span class="text-muted">09</span>
+                    </li>
+                    <li
+                      class="d-flex justify-content-between align-items-center px-3 mb-2"
+                    >
+                      <span
+                        ><i
+                          class="fas fa-exclamation-circle me-2 text-danger"
+                        ></i>
+                        Spam</span
+                      >
+                      <span class="text-muted">14</span>
+                    </li>
+                    <li
+                      class="d-flex justify-content-between align-items-center px-3 mb-2"
+                    >
+                      <span
+                        ><i class="fas fa-bookmark me-2 text-info"></i>
+                        Important</span
+                      >
+                      <span class="text-muted">18</span>
+                    </li>
+                    <li
+                      class="d-flex justify-content-between align-items-center px-3 mb-2"
+                    >
+                      <span
+                        ><i class="fas fa-trash me-2 text-dark"></i> Bin</span
+                      >
+                      <span class="text-muted">9</span>
+                    </li>
+                  </ul>
+
+                  <!-- Label Section -->
+                  <p class="fw-bold mt-4 mb-3">Label</p>
+                  <ul class="list-unstyled ps-4">
+                    <li class="d-flex align-items-center mb-2">
+                      <i class="fas fa-square text-primary me-2"></i> Primary
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <i class="fas fa-square text-info me-2"></i> Social
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <i class="fas fa-square text-warning me-2"></i> Work
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <i class="fas fa-square text-success me-2"></i> Friends
+                    </li>
+                    <li class="d-flex align-items-center text-primary">
+                      <i class="fas fa-plus me-2"></i> Create New Label
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="dropdown">
-                <button
-                  class="btn btn-white dropdown-toggle d-flex align-items-center"
-                  data-bs-toggle="dropdown"
+
+              <div class="col-12 col-lg-8 bg-white border rounded-3 p-4">
+                <div
+                  class="d-flex justify-content-between align-items-center flex-wrap mb-3"
                 >
-                  <img
-                    src="assets/admin-img.png"
-                    class="rounded-circle me-2"
-                    alt="Profile"
-                  />
-                  <span>Moni Roy</span>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                  <li><a class="dropdown-item" href="#">Settings</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Logout</a></li>
-                </ul>
+                  <form class="form mb-3 mb-md-0">
+                    <div class="input-group bg-light rounded-4">
+                      <div class="input-group-append">
+                        <button class="btn" type="button">
+                          <i class="fas fa-search fa-sm text-muted"></i>
+                        </button>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control bg-light border-0 rounded-4"
+                        placeholder="Search"
+                        aria-label="Search"
+                        aria-describedby="basic-addon2"
+                      />
+                    </div>
+                  </form>
+                  <div class="d-flex border rounded-3 bg-light ms-5 ms-md-0">
+                    <i class="fas fa-file-download border-end py-2 px-3"></i>
+                    <i class="fas fa-info-circle border-end py-2 px-3"></i>
+                    <i class="fas fa-trash py-2 px-3"></i>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td><input type="checkbox" /></td>
+                        <td>&#9734;</td>
+                        <td>Jullu Jalal</td>
+                        <td><span class="badge bg-primary">Primary</span></td>
+                        <td>Our Bachelor of Commerce program is...</td>
+                        <td>8:38 AM</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" /></td>
+                        <td>&#9734;</td>
+                        <td>Minerva Barnett</td>
+                        <td>
+                          <span class="badge bg-warning text-dark">Work</span>
+                        </td>
+                        <td>Get Best Advertiser In Your Side...</td>
+                        <td>8:13 AM</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" /></td>
+                        <td><i class="fas fa-star text-warning"></i></td>
+                        <td>Peter Lewis</td>
+                        <td><span class="badge bg-success">Friends</span></td>
+                        <td>Vacation Home Rental Success</td>
+                        <td>7:52 PM</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" /></td>
+                        <td>&#9734;</td>
+                        <td>Jullu Jalal</td>
+                        <td>Our Bachelor of Commerce program is...</td>
+                        <td>8:38 AM</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" /></td>
+                        <td>&#9734;</td>
+                        <td>Minerva Barnett</td>
+                        <td>
+                          <span class="badge bg-info">Social</span>
+                        </td>
+                        <td>Get Best Advertiser In Your Side...</td>
+                        <td>8:13 AM</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" /></td>
+                        <td>&#9734;</td>
+                        <td>Peter Lewis</td>
+                        <td><span class="badge bg-success">Friends</span></td>
+                        <td>Vacation Home Rental Success</td>
+                        <td>7:52 PM</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" /></td>
+                        <td>&#9734;</td>
+                        <td>Jullu Jalal</td>
+
+                        <td>Our Bachelor of Commerce program is...</td>
+                        <td>8:38 AM</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" /></td>
+                        <td>&#9734;</td>
+                        <td>Minerva Barnett</td>
+                        <td>
+                          <span class="badge bg-warning text-dark">Work</span>
+                        </td>
+                        <td>Get Best Advertiser In Your Side...</td>
+                        <td>8:13 AM</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" /></td>
+                        <td><i class="fas fa-star text-warning"></i></td>
+                        <td>Peter Lewis</td>
+                        <td><span class="badge bg-info">Social</span></td>
+                        <td>Vacation Home Rental Success</td>
+                        <td>7:52 PM</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" /></td>
+                        <td>&#9734;</td>
+                        <td>Jullu Jalal</td>
+                        <td>Our Bachelor of Commerce program is...</td>
+                        <td>8:38 AM</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" /></td>
+                        <td><i class="fas fa-star text-warning"></i></td>
+                        <td>Minerva Barnett</td>
+                        <td>
+                          <span class="badge bg-warning text-dark">Work</span>
+                        </td>
+                        <td>Get Best Advertiser In Your Side...</td>
+                        <td>8:13 AM</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" /></td>
+                        <td>&#9734;</td>
+                        <td>Peter Lewis</td>
+                        <td><span class="badge bg-success">Friends</span></td>
+                        <td>Vacation Home Rental Success</td>
+                        <td>7:52 PM</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" /></td>
+                        <td>&#9734;</td>
+                        <td>Peter Lewis</td>
+                        <td><span class="badge bg-primary">Primary</span></td>
+                        <td>Vacation Home Rental Success</td>
+                        <td>7:52 PM</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
-          </header>
-        </main>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Bootstrap Bundle with Popper -->

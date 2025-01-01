@@ -83,4 +83,8 @@ th {
   .font-small {
     font-size: 14px;
   }
+
+  .small-img {
+    width: 50px;
+  }
 }
